@@ -157,7 +157,7 @@ async def record_video(drone):
     save_path = f"data/{timestamp}"  # Path to store frames
     os.makedirs(save_path, exist_ok=True)
 
-    cap = cv2.VideoCapture("vid.mp4")
+    cap = cv2.VideoCapture("vid1.webm")
     if not cap.isOpened():
         print("❌ Failed to open video file! Skipping video-related tasks.")
         return  # Skip video processing if the file cannot be opened
